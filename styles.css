@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/ css2?family=Poppins: ital, wght@0,400;0,500; 1,300&display-swap');
+
+
+:root{
+    --green:green;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0.1);
+    --border:2rem soild rgba(0,0,0.1);
+    --outline: .1rem soild rgba(0,0,0.1);
+}
+
+
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+body{
+    background: #eee;
+    overflow-x: hidden;
+}
+/*css code for banner*/
+section
+{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    color:var(--black);
+}
+
+.heading span{
+    background: yellow;
+    color: #fff;
+    display: inline-block;
+    padding: .4rem 2.8rem;
+    clip-path: polygon(100% 0, 93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+    
+}
+
+.header{
+    border: 2px solid;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+    background: transparent;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #eee;
+}
+
+.header .logo i{
+    color:#eee;
+}
+
+.header .navbar a{
+    font-size: 1.01rem;
+    margin: 0 1rem;
+    color: #c0bdbd;
+}
+
+.header .navbar a:hover{
+    color:white;
+}
+
+.header .icons div{
+    height: 2.1rem;
+    width: 2.1rem;
+    line-height: 2.2rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 1.1rem;
+    margin-right: .3rem;
+    text-align: center;
+}
+.header .icons div:hover{
+    background: var(--black);
+    color: white;
+}
+
+.header .search-form{
+    border: 0px solid;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 20%;
+    height: 3rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.header .search-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+.header .search-form label{
+    font-size: 1.2rem;
+    padding-right: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.header .search-form label:hover{
+    color:black;
+}
+.btn{
+    border: .2rem solid var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+.btn:hover{
+    background: var(--black);
+    color: #fff;
+}
+.header .login-form{
+    border: 0px solid;
+    position: absolute;
+    width: 28%;
+    top:110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.header .login-form.active{
+    right:2rem;
+    transition: .4s linear;
+}
+.header .login-form .box{
+    width: 100%;
+    border: 0px solid;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: var(--black);
+    text-transform: none;
+}
+.header .login-form p{
+    font-size: 1.1rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+}
+.header .login-form p a{
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.home{
+    border: 0px solid;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("cover.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    justify-content: center;
+    padding-top: 17rem;
+    padding-bottom: 5rem; 
+}
+.home .content{
+    border: 0px solid;
+    text-align: center;
+    width: 60rem;
+    font-size:xx-large;
+}
+
+.home .content h3 {
+    color:#fff;
+    font-size: 60px;
+    transition: all 1.2s;
+}
+
+.home .content p {
+    color: #eee;
+    font-size: 28px;
+    margin-bottom: -2%;
+} 
+.home .content h3 span{
+    color: yellow;
+    font-size: 80px;
+}
+/*top trending*/
+.features .box-container{
+    border: 0px solid;
+    display:flex;
+    gap: 0.1rem;
+}
+.features .box-container .box{
+    border:0px solid;
+    padding:1rem 1rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align:center;
+    
+}
+.features .box-container .box:hover{
+    box-shadow: 1px 1px 10px 1px black;
+}
+.features {
+    margin-left: -15px;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+/*---contact--------*/
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 20;
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+}
+.footer-content ul{
+        text-align: center;
+}
+.list{
+        padding: 0;
+}
+.list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+}
+.list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #f18930;
+        transition-duration: .5s;
+}
+.list li:hover::before{
+        width: 70px;
+}
+.social-icons{
+        text-align: center;
+        padding: 0;
+}
+.social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+}
+.social-icons i{
+        color: white;
+        font-size: 25px;
+}
+a{
+        text-decoration: none;
+}
+a:hover{
+        color: #f18930;
+}
+.social-icons i:hover{
+        color: #f18930;
+}
+.bottom-bar{
+        background: #f18930;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+}
+.bottom-bar p{
+        color: #343434;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+}
